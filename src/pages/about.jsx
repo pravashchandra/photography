@@ -23,8 +23,8 @@ const about = () => {
     />
 
     <About />
-    <Ourvision />
-    <Whychooseus />
+    {/* <Ourvision />
+    <Whychooseus /> */}
     <Getappointment />
 
     </>

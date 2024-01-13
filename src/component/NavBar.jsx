@@ -51,8 +51,8 @@ const NavBar = () => {
   return (
     <>
       <div className={`w-full flex px-[24px] xl:px-20 py-4 justify-between items-center absolute top-0 left-0 z-10`}>
-        <div className='flex'>
-          <Link href="/"><Image src={logo} alt='Logo;' className='w-[110px] md:w-[120px]'/></Link>
+        <div className='flex' data-aos ='fade' data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" data-aos-once="true">
+          <Link href="/"><Image src={logo} alt='Logo;' className='w-[110px] md:w-[90px] lg:w-[120px]'/></Link>
         </div>
         <span 
           onClick={handleNavToggle} 
@@ -63,9 +63,9 @@ const NavBar = () => {
         </span>
 
         {/*------------Desktop Menu Bar----------- */}
-        <div className='hidden md:flex py-6 text-white text-[17px] tracking-[1px]'>
-          <div className='flex space-x-8'>
-            <ul className='flex space-x-14 font-josefin font-[300]'>
+        <div className='hidden md:flex md:py-[24px] xl:py-6 text-white md:text-[15px] lg:text-[17px] tracking-[1px]'>
+          <div className='flex md:space-x-2 lg:space-x-8'>
+            <ul className='flex md:space-x-6 xl:space-x-14 font-josefin font-[300]'>
               <li className='font-josefin'><Link href="/" className={`${isActive ? "font-bold" : ""} font-josefin`}>Home</Link></li>
               <li><Link href="/about" className="font-josefin">About Us</Link></li>
               <li className='flex'
@@ -87,11 +87,12 @@ const NavBar = () => {
         <div className='hidden md:flex'>
           
           <button 
-            className='relative flex h-[35px] md:h-[40px] w-[130px] md:w-[160px] items-center justify-center overflow-hidden bg-transprent text-white font-josefin uppercase text-[12px] md:text-[12px] tracking-[1px] border border-white shadow-md transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-gold hover:text-white hover:border-gold before:duration-500 before:ease-out hover:shadow-gold-600 hover:before:h-56 hover:before:w-56'
+            className='relative flex h-[35px] md:h-[35px] lg:h-[40px] w-[130px] md:w-[130px] lg:w-[160px] items-center justify-center overflow-hidden bg-transprent text-white font-josefin uppercase text-[12px] md:text-[12px] tracking-[1px] border border-white shadow-md transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-gold hover:text-white hover:border-gold before:duration-500 before:ease-out hover:shadow-gold-600 hover:before:h-56 hover:before:w-56'
             onClick={toggleContactForm}
           >
-            {showPopup && <Popupcontact toggleContactForm={toggleContactForm}/> }
+           
               <span className='relative z-10'>Get a quote</span>
+              {showPopup && <Popupcontact toggleContactForm={toggleContactForm}/> }
           </button>
         </div>
       </div>

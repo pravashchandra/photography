@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Tangerine:wght@400;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,8 +20,4 @@ textarea:focus{outline:none; }
     font-size: 13.6px;
     color: #c48f56;
   }
-  .slick-dots li{margin: 0px !important;}
-
-  .slick-dots li.slick-active button:before{opacity:1 !important; font-size:10px !important;}
-  .slick-dots li button:before{color:#AE783C !important; font-size:6px !important;opacity:0.75 !important;}
 

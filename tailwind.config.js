@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       fontFamily: {
         coromont: ['Cormorant Garamond', 'serif'],
-        josefin: ['Josefin Slab', 'serif']
+        josefin: ['Josefin Slab', 'serif'],
+        tangerian: ['Tangerine', 'cursive']
       },
       colors: {
         'lightgold': '#FAF0E6',

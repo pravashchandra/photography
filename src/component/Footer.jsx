@@ -1,14 +1,17 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import footerbg from '../../public/Images/Footer/new_footer.png';
 import footerbgmob from '../../public/Images/Footer/footerbg.png';
 import footerlogo from '../../public/Images/Proadosh_logo.png';
-import { FaInstagram,FaWhatsapp } from "react-icons/fa6";
-import { AiOutlineYoutube } from "react-icons/ai";
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
 
 const Footer = () => {
+  useEffect(() => {
+    Aos.init();
+  }, [])
+  
   const colone =[
     {id:1, name:'Home', url: '/'},
     {id:2, name:'About', url: '/about'},
@@ -34,12 +37,12 @@ const Footer = () => {
 
   return (
     <>
-      <div className='relative'>
+      <div className='relative' data-aos ='fade' data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" data-aos-once="true">
           <Image src={footerbg} 
             width={1950}
             height={400}
             alt='Logo'
-            className='hidden md:flex object-cover'
+            className='hidden md:flex object-cover md:h-[420px] xl:h-[100%]'
           />
           <Image src={footerbgmob} 
             width={650}
@@ -49,11 +52,11 @@ const Footer = () => {
           />
           <div>
           <div className='w-full absolute top-[20px] md:top-[15%] text-left flex flex-col'>
-            <div className='flex flex-col md:flex-row justify-between px-[20px] md:px-20'>
+            <div className='flex flex-col md:flex-row justify-between px-[20px] md:px-[24px] xl:px-20'>
               
               
               {/* Footer first Column starts here */}
-              <div className='md:w-[25%]'>
+              <div className='md:w-[25%] md:hidden lg:flex'>
                 <React.Fragment>
                   <Link href='/'>
                     <Image src={footerlogo} alt='Logo' width={115} />
@@ -133,7 +136,7 @@ const Footer = () => {
               
             </div>
 
-            <div className='flex md:justify-center mx-[20px] md:mx-20 pt-[50px] md:pt-[90px] text-[#ececec] text-[12px] md:text-[14px] md:tracking-[0.7px]'>
+            <div className='flex md:justify-center mx-[20px] md:mx-20 pt-[50px] xl:pt-[90px] text-[#ececec] text-[12px] md:text-[14px] md:tracking-[0.7px]'>
               <p>Copyright © 2023 Pradosh Photography All Rights Reserved</p>
           </div>
           </div>

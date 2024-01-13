@@ -19,13 +19,13 @@
     "postcss": "8.4.27",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.49.3",
     "react-icons": "^4.10.1",
     "react-iframe": "^1.8.5",
     "react-multi-carousel": "^2.8.4",
     "react-router-dom": "^6.14.2",
     "sass": "^1.69.3",
-    "sharp": "^0.33.1",
-    "slick-carousel": "^1.8.1",
+    "sharp": "^0.33.2",
     "swiper": "^10.3.1"
   },
   "devDependencies": {

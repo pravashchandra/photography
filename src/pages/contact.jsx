@@ -22,7 +22,6 @@ const Contact = () => {
     {/* Conatct Page Banner Starts Here */}
     <AllPageBanner 
       title="Contact Us"
-      description="This is the contact us page"
       button="Contact Us"
       bgImage={ContactBanner}
       mobBgImage={ContactMObBanner}

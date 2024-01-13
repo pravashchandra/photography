@@ -16,15 +16,10 @@ const ContactForm = () => {
   const [message, setMessage] = useState('');
   const [showSuccess, setShowSuccess] = useState(false);
 
-  const handelShowSuccess = () =>{
-    setShowSuccess(!showSuccess)
-  }
-
-
   useEffect(() => {
-setTimeout(()=>{
-  setShowSuccess(false)
-}, 5000)
+    setTimeout(()=>{
+      setShowSuccess(false)
+    }, 5000)
 
   },[showSuccess])
   
@@ -57,7 +52,8 @@ setTimeout(()=>{
         setMessage('');
       })
       .catch((error) => {
-        console.error('Error sending email:', error);
+        setShowError(true);
+        // console.error('Error sending email:', error);
       });
   }
 
@@ -67,6 +63,7 @@ setTimeout(()=>{
         type="text"
         placeholder="Your Name"
         value={name}
+        required="true"
         onChange={(e) => setName(e.target.value)}
       />
       <input 
@@ -74,6 +71,9 @@ setTimeout(()=>{
         placeholder='Mobile Number'
         value={mobile}
         className='mt-5'
+        minLength={10}
+        maxLength={10}
+        required="true"
         onChange={(e) => setMobile(e.target.value)}
         
       />
@@ -81,25 +81,26 @@ setTimeout(()=>{
         type="email"
         placeholder="Your Email"
         value={email}
+        required="true"
         className='mt-5'
         onChange={(e) => setEmail(e.target.value)}
 
       />
       <select className='mt-5'>
         <option value="">Select Services</option>
-        <option value="">Weeding Photography</option>
-        <option value="">Pre-Weeding Photography</option>
-        <option value="">Engagement Photography</option>
-        <option value="">Birthday Photography</option>
-        <option value="">Maternity Photography</option>
-        <option value="">Baby Shower Photography</option>
-        <option value="">Annaparsana Photography</option>
-        <option value="">Anniversary Photography</option>
-        <option value="">Corporate Photography</option>
-        <option value="">Baby Photoshoot</option>
-        <option value="">House Warming</option>
-        <option value="">Naming ceremony</option>
-        <option value="">Othres</option>
+        <option value="photography">Weeding Photography</option>
+        <option value="prewedding">Pre-Weeding Photography</option>
+        <option value="engagement">Engagement Photography</option>
+        <option value="birthday">Birthday Photography</option>
+        <option value="maternity">Maternity Photography</option>
+        <option value="baby-shower">Baby Shower Photography</option>
+        <option value="annaparsana">Annaparsana Photography</option>
+        <option value="anniversary">Anniversary Photography</option>
+        <option value="corporate">Corporate Photography</option>
+        <option value="babyphotoshoot">Baby Photoshoot</option>
+        <option value="housewarming">House Warming</option>
+        <option value="naimgceremony">Naming ceremony</option>
+        <option value="others">Othres</option>
       </select>
 
       <textarea
@@ -114,7 +115,7 @@ setTimeout(()=>{
         <span className="relative z-10">Send Email</span>     
       </button>
 
-    {showSuccess && <p>The Email has been sent successfully.</p>}
+    {showSuccess && <p className='mt-2'>The Email has been sent successfully.</p>}
     </form>
   )
 }

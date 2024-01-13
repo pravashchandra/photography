@@ -31,8 +31,8 @@ import 'react-multi-carousel/lib/styles.css';
     };
     return (
       <>
-      <div className='px-[24px] md:px-20 py-4 relative'>
-        <h3 className='font-coromont text-[30px] md:text-[35px] xl:text-[45px] mb-2 md:mb-8 leading-[1.3em] md:leading-[1.2em] text-center' >What My <span className='text-[#C48F56]'>Client</span> Says <br className='flex md:hidden'/> About Me.</h3>
+      <div className='px-[24px] md:px-[24px] xl:px-20 py-4 relative'>
+        <h3 className='font-coromont text-[30px] md:text-[32px] lg:text-[35px] xl:text-[45px] mb-2 md:mb-8 leading-[1.3em] md:leading-[1.2em] text-center' >What My <span className='text-[#C48F56]'>Client</span> Says <br className='flex md:hidden'/> About Me.</h3>
         
           <Carousel responsive={responsive} rewind={true} autoPlay={true}
           containerClass='mx-[-20px]'
@@ -42,10 +42,10 @@ import 'react-multi-carousel/lib/styles.css';
               return(
                 <div key={test.id} className='flex flex-col items-center justify-center mx-[10px] px-[20px] md:px-[55px] text-center py-[25px] md:py-[50px] rounded-md border bg-gold/[0.2] border-gold/[0.2] min-h-[360px]'>
                   <Image src={quote} alt={quote} width={200} className='absolute top-[40%] left-[50%] translate-x-[-50%] translate-y-[-50%] z-[-2] opacity-[0.2]'/>
-                  <p>{test.content}</p>
+                  <p className='text-[15px] md:text-[14px] xl:text-[16px]'>{test.content}</p>
                   <div className='flex items-center justify-center mt-10 gap-3'>
                     {/* <p className='text-[18px] font-medium'>{test.clientprofile}</p> */}
-                    <p>{test.clientname}</p>
+                    <p className='text-[15px] md:text-[14px] xl:text-[16px]'>{test.clientname}</p>
                   </div>
                   
                 </div>
