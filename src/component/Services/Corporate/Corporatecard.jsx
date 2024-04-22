@@ -2,42 +2,6 @@ import React, {useEffect} from 'react';
 import Image from 'next/image';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
-import corporate1 from '../../../../public/Images/Services/Corporate/corporate1.png';
-import corporate2 from '../../../../public/Images/Services/Corporate/corporate2.png';
-import corporate3 from '../../../../public/Images/Services/Corporate/corporate3.png';
-import corporate4 from '../../../../public/Images/Services/Corporate/corporate4.png';
-import corporate5 from '../../../../public/Images/Services/Corporate/corporate5.png';
-import corporate6 from '../../../../public/Images/Services/Corporate/corporate6.png';
-import corporate7 from '../../../../public/Images/Services/Corporate/corporate7.png';
-import corporate8 from '../../../../public/Images/Services/Corporate/corporate8.png';
-import corporate9 from '../../../../public/Images/Services/Corporate/corporate9.png';
-import corporate10 from '../../../../public/Images/Services/Corporate/corporate10.png';
-import corporate11 from '../../../../public/Images/Services/Corporate/corporate11.png';
-import corporate12 from '../../../../public/Images/Services/Corporate/corporate12.png';
-import corporate13 from '../../../../public/Images/Services/Corporate/corporate13.png';
-import corporate14 from '../../../../public/Images/Services/Corporate/corporate14.png';
-import corporate15 from '../../../../public/Images/Services/Corporate/corporate15.png';
-import corporate16 from '../../../../public/Images/Services/Corporate/corporate16.png';
-import corporate17 from '../../../../public/Images/Services/Corporate/corporate17.png';
-import corporate18 from '../../../../public/Images/Services/Corporate/corporate18.png';
-import corporate19 from '../../../../public/Images/Services/Corporate/corporate19.png';
-import corporate20 from '../../../../public/Images/Services/Corporate/corporate20.png';
-import corporate21 from '../../../../public/Images/Services/Corporate/corporate21.png';
-import corporate22 from '../../../../public/Images/Services/Corporate/corporate22.png';
-import corporate23 from '../../../../public/Images/Services/Corporate/corporate23.png';
-import corporate24 from '../../../../public/Images/Services/Corporate/corporate24.png';
-import corporate25 from '../../../../public/Images/Services/Corporate/corporate25.png';
-import corporate26 from '../../../../public/Images/Services/Corporate/corporate26.png';
-import corporate27 from '../../../../public/Images/Services/Corporate/corporate27.png';
-import corporate28 from '../../../../public/Images/Services/Corporate/corporate28.png';
-import corporate29 from '../../../../public/Images/Services/Corporate/corporate29.png';
-import corporate30 from '../../../../public/Images/Services/Corporate/corporate30.png';
-import corporate31 from '../../../../public/Images/Services/Corporate/corporate31.png';
-import corporate32 from '../../../../public/Images/Services/Corporate/corporate32.png';
-import corporate33 from '../../../../public/Images/Services/Corporate/corporate33.png';
-import corporate34 from '../../../../public/Images/Services/Corporate/corporate34.png';
-
-
 
 const Corporatecard = () => {
     useEffect(() => {
@@ -45,40 +9,40 @@ const Corporatecard = () => {
       }, [])
 
     const corporatedata =[
-        {id:1, img: corporate1},
-        {id:2, img: corporate2},
-        {id:3, img: corporate3},
-        {id:4, img: corporate27},
-        {id:5, img: corporate4},
-        {id:6, img: corporate5},
-        {id:7, img: corporate6},
-        {id:8, img: corporate7},
-        {id:9, img: corporate8},
-        {id:10, img: corporate9},
-        {id:11, img: corporate10},
-        {id:12, img: corporate11},
-        {id:13, img: corporate12},
-        {id:14, img: corporate13},
-        {id:15, img: corporate14},
-        {id:16, img: corporate15},
-        {id:17, img: corporate16},
-        {id:18, img: corporate17},
-        {id:19, img: corporate18},
-        {id:20, img: corporate19},
-        {id:21, img: corporate20},
-        {id:22, img: corporate21},
-        {id:23, img: corporate22},
-        {id:24, img: corporate23},
-        {id:25, img: corporate24},
-        {id:26, img: corporate25},
-        {id:27, img: corporate26},
-        {id:28, img: corporate28},
-        {id:29, img: corporate29},
-        {id:30, img: corporate30},
-        {id:31, img: corporate31},
-        {id:32, img: corporate32},
-        {id:33, img: corporate33},
-        {id:34, img: corporate34}
+        {id:1, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589283/Corporate/corporate24_clvbjy.png'},
+        {id:2, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589280/Corporate/corporate20_klswj1.png'},
+        {id:3, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589280/Corporate/corporate19_gulhpx.png'},
+        {id:4, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589278/Corporate/corporate18_hfc8lg.png'},
+        {id:5, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589274/Corporate/corporate17_nqodqb.png'},
+        {id:6, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589273/Corporate/corporate16_xciyuv.png'},
+        {id:7, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589272/Corporate/corporate15_wtijer.png'},
+        {id:8, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589268/Corporate/corporate14_ha7v8n.png'},
+        {id:9, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589266/Corporate/corporate13_lv9dnq.png'},
+        {id:10, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589264/Corporate/corporate12_phcdak.png'},
+        {id:11, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589262/Corporate/corporate11_knqxgf.png'},
+        {id:12, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589260/Corporate/corporate10_oufzhy.png'},
+        {id:13, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589258/Corporate/corporate9_sxhatm.png'},
+        {id:14, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589254/Corporate/corporate7_od3ppq.png'},
+        {id:15, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589255/Corporate/corporate8_hof7tu.png'},
+        {id:16, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589200/Corporate/corporate6_pcoaqt.png'},
+        {id:17, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589177/Corporate/corporate5_il43az.png'},
+        {id:18, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589175/Corporate/corporate4_coqkjh.png'},
+        {id:19, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589173/Corporate/corporate3_xzis30.png'},
+        {id:20, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589171/Corporate/corporate2_xwa936.png'},
+        {id:21, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589169/Corporate/corporate1_pzduio.png'},
+        {id:22, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589167/Corporate/corporate23_bep9sx.png'},
+        {id:23, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589165/Corporate/corporate22_yxrp4w.png'},
+        {id:24, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589164/Corporate/corporate21_xav95l.png'},
+        {id:25, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589162/Corporate/corporate34_lbypot.png'},
+        {id:26, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589160/Corporate/corporate33_tqzen3.png'},
+        {id:27, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589158/Corporate/corporate32_owkchx.png'},
+        {id:28, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589157/Corporate/corporate31_gprith.png'},
+        {id:29, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589156/Corporate/corporate30_qhlvex.png'},
+        {id:30, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589147/Corporate/corporate29_az3qbh.png'},
+        {id:31, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589145/Corporate/corporate27_yklulb.png'},
+        {id:32, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589145/Corporate/corporate26_kqbdpq.png'},
+        {id:33, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589145/Corporate/corporate25_qff9mi.png'},
+        {id:34, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707589145/Corporate/corporate28_rkgeqn.png'}
     ]
 
   return (
@@ -86,7 +50,7 @@ const Corporatecard = () => {
         <div className='grid grid-cols-2 md:grid-cols-5 px-[24px] xl:px-20 gap-4 md:gap-4 py-[40px] md:py-[60px] xl:py-[60px]'>
             {corporatedata.map((items)=>{return(
                 <div key={items.id}>
-                    <Image src={items.img} alt='Corporate' data-aos='zoom-in' data-aos-delay="200" data-aos-once="true"  />
+                    <Image src={items.img} alt='Corporate' width={370} height={430} data-aos='zoom-in' data-aos-delay="200" data-aos-once="true"  />
                 </div>
             )})}
         </div>

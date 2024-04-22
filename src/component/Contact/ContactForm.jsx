@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import emailjs from '@emailjs/browser';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 const initialValues = {
   name: "",
@@ -15,6 +16,7 @@ const ContactForm = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [showSuccess, setShowSuccess] = useState(false);
+  // const [capValue, setCapValue] = useState('');
 
   useEffect(() => {
     setTimeout(()=>{
@@ -63,7 +65,7 @@ const ContactForm = () => {
         type="text"
         placeholder="Your Name"
         value={name}
-        required="true"
+        required={true}
         onChange={(e) => setName(e.target.value)}
       />
       <input 
@@ -73,7 +75,7 @@ const ContactForm = () => {
         className='mt-5'
         minLength={10}
         maxLength={10}
-        required="true"
+        required={true}
         onChange={(e) => setMobile(e.target.value)}
         
       />
@@ -81,13 +83,13 @@ const ContactForm = () => {
         type="email"
         placeholder="Your Email"
         value={email}
-        required="true"
+        required={true}
         className='mt-5'
         onChange={(e) => setEmail(e.target.value)}
 
       />
       <select className='mt-5'>
-        <option value="">Select Services</option>
+      <option value="" defaultValue disabled hidden>Select Services</option>
         <option value="photography">Weeding Photography</option>
         <option value="prewedding">Pre-Weeding Photography</option>
         <option value="engagement">Engagement Photography</option>
@@ -108,9 +110,15 @@ const ContactForm = () => {
         rows="4"
         placeholder="Message"
         value={message}
+        className='h-[80px] md:h-[100px]'
         onChange={(e) => setMessage(e.target.value)}
       >
       </textarea>
+
+      {/* <ReCAPTCHA
+       sitekey='6LdptVEpAAAAANxnwckQ93C4ROV_F0NBXekU1ieN'
+       onChange={(val)=>setCapValue(val)}
+       /> */}
       <button type="submit" className="relative flex h-[45px] w-[170px] mt-[30px] items-center justify-center overflow-hidden bg-transpernt text-gold font-josefin uppercase text-[13px] tracking-[1px] border border-gold shadow-sm transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-gold hover:text-white hover:border-gold before:duration-500 before:ease-out hover:shadow-gold-600 hover:before:h-56 hover:before:w-56">
         <span className="relative z-10">Send Email</span>     
       </button>

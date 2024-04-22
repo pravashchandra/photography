@@ -1,8 +1,6 @@
 import React from 'react'
+import Head from 'next/head';
 import Link from 'next/link';
-import Image from 'next/image';
-import ContactBanner from "../../public/Images/Contact/Contact_banner.png"
-import ContactMObBanner from "../../public/Images/Contact/Contact_mobile.png"
 import AllPageBanner from '@/component/AllPageBanner';
 import ContactForm from '@/component/Contact/ContactForm';
 import { MdCall, MdEmail } from "react-icons/md";
@@ -18,13 +16,24 @@ const initialValues = {
 
 const Contact = () => {
   return (
+    
     <>
+    <Head>
+          <title>
+            Contact Us | Best Birthday Photography in Bangalore 
+          </title>
+          <meta
+            name="description"
+            content="Get in touch with us for the finest birthday photography services in Bangalore! At Pradosh Photography, we specialize in capturing the joyous moments of your special day. Contact us to discuss your requirements and let our skilled team turn your birthday celebration into a collection of beautiful memories. Reach out now for personalized and professional birthday photography services in Bangalore."
+            key="desc"
+          />
+      </Head>
     {/* Conatct Page Banner Starts Here */}
     <AllPageBanner 
       title="Contact Us"
       button="Contact Us"
-      bgImage={ContactBanner}
-      mobBgImage={ContactMObBanner}
+      bgImage='https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707654557/Contact/Contact_bannerr_hhwzjt.png'
+      mobBgImage='https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707654557/Contact/Contact_Mob_Bannerr_sbiypm.png'
     />
     {/* Conatct Page Banner Ends Here */}
 
@@ -42,7 +51,7 @@ const Contact = () => {
             
           </div>
           <Link href='tel:8984103719' className='md:tracking-[0.7px]'>
-            <span>+91 8984103719</span>
+          <span className='text-[16px] lg:text-[17px]'>+91 8984103719</span>
           </Link>
         </div>
         {/* Call Icons with Number Ends here */}
@@ -54,7 +63,7 @@ const Contact = () => {
             
           </div>
           <Link href='mailto:info@pradoshphotography.com' className='md:tracking-[0.7px]'>
-            <span>info@pradoshphotography.com</span>
+          <span className='text-[16px] lg:text-[17px]'>info@pradoshphotography.com</span>
           </Link>
         </div>
         {/* Email Icons with Number Ends here */}
@@ -66,7 +75,7 @@ const Contact = () => {
             
           </div>
           <Link href='/' className='md:tracking-[0.7px]'>
-            <span>Marathali, Bangalore</span>
+            <span className='text-[16px] lg:text-[17px]'>Marathali, Bangalore</span>
           </Link>
         </div>
         {/* Address Icons with Number Ends here */}

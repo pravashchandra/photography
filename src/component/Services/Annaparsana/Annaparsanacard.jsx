@@ -2,19 +2,6 @@ import React, {useEffect} from 'react';
 import Image from 'next/image';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
-import Annaone from '../../../../public/Images/Services/Annaparsana/Anna1.png';
-import Annatwo from '../../../../public/Images/Services/Annaparsana/Anna2.png';
-import Annathree from '../../../../public/Images/Services/Annaparsana/Anna3.png';
-import Annafour from '../../../../public/Images/Services/Annaparsana/Anna4.png';
-import Annafive from '../../../../public/Images/Services/Annaparsana/Anna5.png';
-import Annasix from '../../../../public/Images/Services/Annaparsana/Anna6.png';
-import Annaseven from '../../../../public/Images/Services/Annaparsana/Anna7.png';
-import Annaeight from '../../../../public/Images/Services/Annaparsana/Anna8.png';
-import Annanine from '../../../../public/Images/Services/Annaparsana/Anna9.png';
-import Annaten from '../../../../public/Images/Services/Annaparsana/Anna10.png';
-import Annaeleven from '../../../../public/Images/Services/Annaparsana/Anna11.png';
-import Annatwelve from '../../../../public/Images/Services/Annaparsana/Anna12.png';
-import Annathirteen from '../../../../public/Images/Services/Annaparsana/Anna13.png';
 
 
 const Annaparsanacard = () => {
@@ -23,19 +10,19 @@ const Annaparsanacard = () => {
       }, [])
 
     const Annaparsanadata =[
-        {id:1, img: Annaone},
-        {id:2, img: Annatwo},
-        {id:3, img: Annathree},
-        {id:4, img: Annafour},
-        {id:5, img: Annafive},
-        {id:6, img: Annasix},
-        {id:7, img: Annaseven},
-        {id:8, img: Annaeight},
-        {id:9, img: Annanine},
-        {id:10, img: Annaten},
-        {id:11, img: Annaeleven},
-        {id:12, img: Annatwelve},
-        {id:13, img: Annathirteen}
+        {id:1, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707584581/annaprasanna-shoot/Anna8_zxv0fl.png'},
+        {id:2, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707584579/annaprasanna-shoot/Anna6_awvobr.png'},
+        {id:3, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707584576/annaprasanna-shoot/Anna4_bz0pe7.png'},
+        {id:4, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707584580/annaprasanna-shoot/Anna7_wpjaos.png'},
+        {id:5, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707584578/annaprasanna-shoot/Anna5_hleikr.png'},
+        {id:6, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707584574/annaprasanna-shoot/Anna2_kelxrp.png'},
+        {id:7, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707584575/annaprasanna-shoot/Anna3_ujjvn3.png'},
+        {id:8, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707584573/annaprasanna-shoot/Anna1_iwcqfx.png'},
+        {id:9, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707584570/annaprasanna-shoot/Anna10_kvuhem.png'},
+        {id:10, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707584571/annaprasanna-shoot/Anna13_svb9gp.png'},
+        {id:11, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707584570/annaprasanna-shoot/Anna12_f1poes.png'},
+        {id:12, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707584569/annaprasanna-shoot/Anna11_vgkiqm.png'},
+        {id:13, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707584569/annaprasanna-shoot/Anna9_hdyssl.png'}
     ]
 
   return (
@@ -43,7 +30,7 @@ const Annaparsanacard = () => {
         <div className='grid grid-cols-2 md:grid-cols-5 px-[24px] xl:px-20 gap-4 md:gap-4 py-[40px] md:py-[60px] xl:py-[60px]'>
             {Annaparsanadata.map((items)=>{return(
                 <div key={items.id}>
-                    <Image src={items.img} alt='Annaparsana' data-aos='zoom-in' data-aos-delay="200" data-aos-once="true" />
+                    <Image src={items.img} alt='Annaparsana' width={400} height={450} data-aos='zoom-in' data-aos-delay="200" data-aos-once="true" />
                 </div>
             )})}
         </div>

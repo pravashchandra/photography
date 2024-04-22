@@ -11,7 +11,7 @@ const Gallery = ({items}) => {
   
   return (
     <>
-      <div className='w-[100%] pt-[25px] xl:pt-[20px] px-[24px] xl:px-20 pb-[50px] xl:pb-[60px] flex items-center justify-center'>
+      <div className='w-[100%] pt-[25px] xl:pt-[20px] px-[24px] xl:px-20 pb-[70px] xl:pb-[60px] flex items-center justify-center'>
         <div className='space-y-4 items-center flex-col'>
           {/* <h2 className='font-tangerine text-[38px] text-center'>{title}</h2> */}
          
@@ -19,32 +19,32 @@ const Gallery = ({items}) => {
                   {/* ---------------------------- Left Image -------------------------------------- */}
                   <div className='grid grid-cols-2 gap-[4%] '>
                     <div className='grid grid-cols-1 gap-[4%] '>
-                      <Image src={leftimage1} alt='img_1' priority="true" className='w-[100%] h-[100%] object-cover rounded-md' data-aos='zoom-in' data-aos-delay="200" data-aos-once="true" />
-                      <Image src={leftimage2} alt='img_1' priority="true" className='w-[100%] h-[100%] object-cover rounded-md'  data-aos='zoom-in'  data-aos-delay="200" data-aos-once="true" /> 
+                      <Image src={leftimage1} alt='img_1' width={370} height={430} className='w-[100%] h-[100%] object-cover rounded-md' data-aos='zoom-in' data-aos-delay="200" data-aos-once="true" />
+                      <Image src={leftimage2} alt='img_1' width={370} height={430} className='w-[100%] h-[100%] object-cover rounded-md'  data-aos='zoom-in'  data-aos-delay="200" data-aos-once="true" /> 
                     </div>
 
                     <div className='grid grid-cols-1 gap-[4%]'>
-                      <Image src={leftimage3} alt='img_1' priority="true" className='w-[100%] h-[100%] object-cover rounded-md' data-aos='zoom-in' data-aos-delay="200" data-aos-once="true"/>
-                      <Image src={leftimage4} alt='img_1' priority="true" className='w-[100%] h-[100%] object-cover rounded-md' data-aos='zoom-in' data-aos-delay="200" data-aos-once="true"/>
+                      <Image src={leftimage3} alt='img_1' width={370} height={430} className='w-[100%] h-[100%] object-cover rounded-md' data-aos='zoom-in' data-aos-delay="200" data-aos-once="true"/>
+                      <Image src={leftimage4} alt='img_1' width={370} height={430} className='w-[100%] h-[100%] object-cover rounded-md' data-aos='zoom-in' data-aos-delay="200" data-aos-once="true"/>
                     </div>
                   </div>
 
                   {/* ---------------------------- Center Image -------------------------------------- */}
 
                   <div className='hidden md:flex'>
-                    <Image src={centerimage} alt='img_1' priority="true" className='w-[100%] h-[100%] object-cover rounded-md'  data-aos='zoom-in' data-aos-delay="200" data-aos-once="true"/>
+                    <Image src={centerimage} alt='img_1' width={370} height={430} className='w-[100%] h-[100%] object-cover rounded-md'  data-aos='zoom-in' data-aos-delay="200" data-aos-once="true"/>
                   </div>
 
                 {/* ---------------------------- Right Image -------------------------------------- */}
                   <div className='grid grid-cols-2 gap-[4%] mt-4 md:mt-0'>
                     <div className='grid grid-cols-1 gap-[4%]'>
-                      <Image src={leftimage5} alt='img_1' priority="true" className='w-[100%] h-[100%] object-cover rounded-md' data-aos='zoom-in' data-aos-delay="200"data-aos-once="true"/>
-                      <Image src={leftimage6} alt='img_1' priority="true" className='w-[100%] h-[100%] object-cover rounded-md' data-aos='zoom-in' data-aos-delay="200" data-aos-once="true"/>
+                      <Image src={leftimage5} alt='img_1' width={370} height={430} className='w-[100%] h-[100%] object-cover rounded-md' data-aos='zoom-in' data-aos-delay="200"data-aos-once="true"/>
+                      <Image src={leftimage6} alt='img_1' width={370} height={430} className='w-[100%] h-[100%] object-cover rounded-md' data-aos='zoom-in' data-aos-delay="200" data-aos-once="true"/>
                     </div>
 
                     <div className='grid grid-cols-1 gap-[4%]'>
-                      <Image src={leftimage7} alt='img_1' priority="true" className='w-[100%] h-[100%] object-cover rounded-md' data-aos='zoom-in' data-aos-delay="200" data-aos-once="true"/>
-                      <Image src={leftimage8} alt='img_1' priority="true" className='w-[100%] h-[100%] object-cover rounded-md' data-aos='zoom-in' data-aos-delay="200" data-aos-once="true"/>
+                      <Image src={leftimage7} alt='img_1' width={370} height={430} className='w-[100%] h-[100%] object-cover rounded-md' data-aos='zoom-in' data-aos-delay="200" data-aos-once="true"/>
+                      <Image src={leftimage8} alt='img_1' width={370} height={430} className='w-[100%] h-[100%] object-cover rounded-md' data-aos='zoom-in' data-aos-delay="200" data-aos-once="true"/>
                     </div>
                   </div>
                 </div>

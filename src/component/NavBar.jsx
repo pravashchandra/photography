@@ -51,7 +51,7 @@ const NavBar = () => {
   return (
     <>
       <div className={`w-full flex px-[24px] xl:px-20 py-4 justify-between items-center absolute top-0 left-0 z-10`}>
-        <div className='flex' data-aos ='fade' data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" data-aos-once="true">
+        <div className='flex' data-aos ='fade' data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="200" data-aos-once="true">
           <Link href="/"><Image src={logo} alt='Logo;' className='w-[110px] md:w-[90px] lg:w-[120px]'/></Link>
         </div>
         <span 
@@ -65,7 +65,7 @@ const NavBar = () => {
         {/*------------Desktop Menu Bar----------- */}
         <div className='hidden md:flex md:py-[24px] xl:py-6 text-white md:text-[15px] lg:text-[17px] tracking-[1px]'>
           <div className='flex md:space-x-2 lg:space-x-8'>
-            <ul className='flex md:space-x-6 xl:space-x-14 font-josefin font-[300]'>
+            <ul className='flex md:space-x-6 xl:space-x-16 font-josefin font-[300]'>
               <li className='font-josefin'><Link href="/" className={`${isActive ? "font-bold" : ""} font-josefin`}>Home</Link></li>
               <li><Link href="/about" className="font-josefin">About Us</Link></li>
               <li className='flex'
@@ -77,7 +77,7 @@ const NavBar = () => {
                 {showSubMenu ? <MdKeyboardArrowUp className='text-[22px] mt-[2px]'/> : <MdKeyboardArrowDown className='text-[22px]  mt-[2px]'/>}
                 
               </li>
-              <li><Link href="/gallery" className='font-josefin'>Gallery</Link></li>
+              <li><Link href="/#gallery" className='font-josefin'>Gallery</Link></li>
               <li><Link href="/contact" className='font-josefin'>Contact</Link></li>
             </ul>  
           </div> 
@@ -117,6 +117,7 @@ const NavBar = () => {
                 
                 
               </li>
+              <li onClick={handleNavToggle}><Link href="/#gallery" className='font-josefin'>Gallery</Link></li>
               <li onClick={handleNavToggle}><Link href="/contact" className='font-josefin'>Contact</Link></li>
           </ul>  
         </div>

@@ -37,70 +37,70 @@ const GalleryFilter = () => {
       }
       return (
         <>
-        <div>
-        <h2 className='font-coromont text-[30px] md:text-[32px] lg:text-[38px] py-[18px] md:py-[5px] xl:text-[45px] leading-[1.3em] md:leading-[1.6em] text-center'>Our Gallery</h2>
+        <div id="gallery">
+        <h2 className='font-coromont text-[28px] md:text-[32px] lg:text-[38px] py-[18px] md:py-[5px] xl:text-[45px] leading-[1.3em] md:leading-[1.6em] text-center'>Our Gallery</h2>
         </div>
         {/* Mobile Title Slider */}
 
 
-        <div className='md:hidden pl-[10px] text-center'>
+        <div className='md:hidden pl-[10px] text-center font-josefin'>
           <Carousel responsive={responsive}
           swipeable={true}
           arrows={false}
           autoPlay={false}
           >
-            <div className=' relative py-[18px] md:py-[5px] xl:py-[25px]' onClick={() =>filterResult('Prewedding') }>
+            <div className='relative py-[18px] md:py-[5px] xl:py-[25px]' onClick={() =>filterResult('Prewedding') }>
               <input type="radio" name="category" defaultChecked id="baby_shower" className='peer absolute w-[100%] h-[100%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 cursor-pointer'/>
-              <label htmlFor="baby_shower" className='rounded-sm peer-checked:text-white peer-checked:bg-gold peer-checked:px-[20px] peer-checked:pt-[7px] peer-checked:pb-[10px] text-[15px] lg:text-[17px] z-10'>Prewedding</label>
+              <label htmlFor="baby_shower" className='font-josefin rounded-[35px] border border-gold bg-transparent px-[25px] pt-[9px] pb-[10px] peer-checked:text-white peer-checked:bg-gold text-[16px] lg:text-[17px] z-10'>Prewedding</label>
             </div>
 
             <div className=' relative py-[18px] md:py-[5px] xl:py-[25px]' onClick={() =>filterResult('Weddings') }>
               <input type="radio" name="category" id="baby_shower" className='peer absolute w-[100%] h-[100%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 cursor-pointer'/>
-              <label htmlFor="baby_shower" className='rounded-sm peer-checked:text-white peer-checked:bg-gold peer-checked:px-[20px] peer-checked:pt-[7px] peer-checked:pb-[10px] text-[15px] lg:text-[17px] z-10'>Weddings</label>
+              <label htmlFor="baby_shower" className='rounded-[35px] border border-gold bg-transparent px-[35px] pt-[9px] pb-[10px] peer-checked:text-white peer-checked:bg-gold text-[16px] lg:text-[17px] z-10'>Weddings</label>
             </div>
 
             <div className=' relative py-[18px] md:py-[5px] xl:py-[25px]' onClick={() =>filterResult('Engagement') }>
               <input type="radio" name="category" id="traveling" className='peer absolute w-[100%] h-[100%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 cursor-pointer'/>
-              <label htmlFor="traveling" className='rounded-sm peer-checked:text-white peer-checked:bg-gold peer-checked:px-[20px] peer-checked:pt-[7px] peer-checked:pb-[10px] text-[15px] lg:text-[17px] z-10'>Engagement</label>
+              <label htmlFor="traveling" className='rounded-[35px] border border-gold bg-transparent px-[25px] pt-[9px] pb-[10px] peer-checked:text-white peer-checked:bg-gold  text-[16px] lg:text-[17px] z-10'>Engagement</label>
             </div>
             
             <div className=' relative py-[18px] md:py-[5px] xl:py-[25px]' onClick={() =>filterResult('Birthday') }>
               <input type="radio" name="category" id="journey" className='peer absolute w-[100%] h-[100%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 cursor-pointer'/>
-              <label htmlFor="journey" className='rounded-sm peer-checked:text-white peer-checked:bg-gold peer-checked:px-[20px] peer-checked:pt-[7px] peer-checked:pb-[10px] text-[15px] lg:text-[17px] z-10'>Birthday</label>
+              <label htmlFor="journey" className='rounded-[35px] border border-gold bg-transparent px-[40px] pt-[9px] pb-[10px] peer-checked:text-white peer-checked:bg-gold  text-[16px] lg:text-[17px] z-10'>Birthday</label>
             </div>    
 
             <div className=' relative py-[18px] md:py-[5px] xl:py-[25px]' onClick={() =>filterResult('Baby Shower') }>
               <input type="radio" name="category" id="weddings" className='peer absolute w-[100%] h-[100%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 cursor-pointer'/>
-              <label htmlFor="weddings" className='rounded-sm peer-checked:text-white peer-checked:bg-gold peer-checked:px-[20px] peer-checked:pt-[7px] peer-checked:pb-[10px] text-[15px] lg:text-[17px] z-10'>Baby Shower</label>
+              <label htmlFor="weddings" className='rounded-[35px] border border-gold bg-transparent px-[25px] pt-[9px] pb-[10px] peer-checked:text-white peer-checked:bg-gold  text-[16px] lg:text-[17px] z-10'>Baby Shower</label>
             </div>    
           </Carousel>
         </div>
 
-          <div className='hidden md:flex justify-center items-center px-20 m-auto gap-6 md:gap-10 text-[20px] overflow-hidden '>
+          <div className='hidden md:flex justify-center items-center px-20 m-auto gap-6 md:gap-10 text-[20px] overflow-hidden font-josefin'>
 
-          <div className=' relative py-[18px] md:py-[5px] xl:py-[25px]' onClick={() =>filterResult('Prewedding') }>
+          <div className=' relative py-[18px] md:py-[5px] xl:py-[25px] ' onClick={() =>filterResult('Prewedding') }>
             <input type="radio" name="category" defaultChecked id="baby_shower" className='peer absolute w-[100%] h-[100%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 cursor-pointer'/>
-            <label htmlFor="baby_shower" className='rounded-sm peer-checked:text-white peer-checked:bg-gold peer-checked:px-[20px] peer-checked:pt-[7px] peer-checked:pb-[10px] text-[15px] lg:text-[17px] z-10'>Prewedding</label>
+            <label htmlFor="baby_shower" className='border border-gold px-[22px] pt-[8px] pb-[11px] peer-checked:text-white peer-checked:bg-gold text-[16.5px] lg:text-[16px] xl:text-[17px] tracking-[0.5px] z-10'>Prewedding</label>
           </div>
 
           <div className=' relative py-[18px] md:py-[5px] xl:py-[25px]' onClick={() =>filterResult('Weddings') }>
             <input type="radio" name="category" id="baby_shower" className='peer absolute w-[100%] h-[100%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 cursor-pointer'/>
-            <label htmlFor="baby_shower" className='rounded-sm peer-checked:text-white peer-checked:bg-gold peer-checked:px-[20px] peer-checked:pt-[7px] peer-checked:pb-[10px] text-[15px] lg:text-[17px] z-10'>Weddings</label>
+            <label htmlFor="baby_shower" className='border border-gold px-[35px] pt-[8px] pb-[11px] peer-checked:text-white peer-checked:bg-gold text-[16.5px] lg:text-[16px] xl:text-[17px] tracking-[0.5px] z-10'>Weddings</label>
           </div>
 
           <div className=' relative py-[18px] md:py-[5px] xl:py-[25px]' onClick={() =>filterResult('Engagement') }>
             <input type="radio" name="category" id="traveling" className='peer absolute w-[100%] h-[100%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 cursor-pointer'/>
-            <label htmlFor="traveling" className='rounded-sm peer-checked:text-white peer-checked:bg-gold peer-checked:px-[20px] peer-checked:pt-[7px] peer-checked:pb-[10px] text-[15px] lg:text-[17px] z-10'>Engagement</label>
+            <label htmlFor="traveling" className='border border-gold px-[32px] pt-[8px] pb-[11px] peer-checked:text-white peer-checked:bg-gold text-[16.5px] lg:text-[16px] xl:text-[17px] tracking-[0.5px] z-10'>Engagement</label>
           </div>
             
           <div className=' relative py-[18px] md:py-[5px] xl:py-[25px]' onClick={() =>filterResult('Birthday') }>
             <input type="radio" name="category" id="journey" className='peer absolute w-[100%] h-[100%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 cursor-pointer'/>
-            <label htmlFor="journey" className='rounded-sm peer-checked:text-white peer-checked:bg-gold peer-checked:px-[20px] peer-checked:pt-[7px] peer-checked:pb-[10px] text-[15px] lg:text-[17px] z-10'>Birthday</label>
+            <label htmlFor="journey" className='border border-gold px-[39px] pt-[8px] pb-[11px] peer-checked:text-white peer-checked:bg-gold text-[16.5px] lg:text-[16px] xl:text-[17px] tracking-[0.5px] z-10'>Birthday</label>
           </div>    
 
           <div className=' relative py-[18px] md:py-[5px] xl:py-[25px]' onClick={() =>filterResult('Baby Shower') }>
             <input type="radio" name="category" id="weddings" className='peer absolute w-[100%] h-[100%] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] opacity-0 cursor-pointer'/>
-            <label htmlFor="weddings" className='rounded-sm peer-checked:text-white peer-checked:bg-gold peer-checked:px-[20px] peer-checked:pt-[7px] peer-checked:pb-[10px] text-[15px] lg:text-[17px] z-10'>Baby Shower</label>
+            <label htmlFor="weddings" className='border border-gold px-[25px] pt-[8px] pb-[11px] peer-checked:text-white peer-checked:bg-gold text-[16.5px] lg:text-[16px] xl:text-[17px] tracking-[0.5px] z-10'>Baby Shower</label>
           </div>    
   
         </div>

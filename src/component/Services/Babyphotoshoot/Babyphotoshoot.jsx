@@ -2,35 +2,6 @@ import React, {useEffect} from 'react';
 import Image from 'next/image';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
-import babyphoto1 from '../../../../public/Images/Services/Babyphotoshoot/babyphoto1.png';
-import babyphoto2 from '../../../../public/Images/Services/Babyphotoshoot/babyphoto2.png';
-import babyphoto3 from '../../../../public/Images/Services/Babyphotoshoot/babyphoto3.png';
-import babyphoto4 from '../../../../public/Images/Services/Babyphotoshoot/babyphoto4.png';
-import babyphoto5 from '../../../../public/Images/Services/Babyphotoshoot/babyphoto5.png';
-import babyphoto6 from '../../../../public/Images/Services/Babyphotoshoot/babyphoto6.png';
-import babyphoto7 from '../../../../public/Images/Services/Babyphotoshoot/babyphoto7.png';
-import babyphoto8 from '../../../../public/Images/Services/Babyphotoshoot/babyphoto8.png';
-import babyphoto9 from '../../../../public/Images/Services/Babyphotoshoot/babyphoto9.png';
-import babyphoto10 from '../../../../public/Images/Services/Babyphotoshoot/babyphoto10.png';
-import babyphoto11 from '../../../../public/Images/Services/Babyphotoshoot/babyphoto11.png';
-import babyphoto12 from '../../../../public/Images/Services/Babyphotoshoot/babyphoto12.png';
-import babyphoto13 from '../../../../public/Images/Services/Babyphotoshoot/babyphoto13.png';
-import babyphoto14 from '../../../../public/Images/Services/Babyphotoshoot/babyphoto14.png';
-import babyphoto15 from '../../../../public/Images/Services/Babyphotoshoot/babyphoto15.png';
-import babyphoto16 from '../../../../public/Images/Services/Babyphotoshoot/babyphoto16.png';
-import babyphoto17 from '../../../../public/Images/Services/Babyphotoshoot/babyphoto17.png';
-import babyphoto18 from '../../../../public/Images/Services/Babyphotoshoot/babyphoto18.png';
-import babyphoto19 from '../../../../public/Images/Services/Babyphotoshoot/babyphoto19.png';
-import babyphoto20 from '../../../../public/Images/Services/Babyphotoshoot/babyphoto20.png';
-import babyphoto21 from '../../../../public/Images/Services/Babyphotoshoot/babyphoto21.png';
-import babyphoto22 from '../../../../public/Images/Services/Babyphotoshoot/babyphoto22.png';
-import babyphoto23 from '../../../../public/Images/Services/Babyphotoshoot/babyphoto23.png';
-import babyphoto24 from '../../../../public/Images/Services/Babyphotoshoot/babyphoto24.png';
-import babyphoto25 from '../../../../public/Images/Services/Babyphotoshoot/babyphoto25.png';
-import babyphoto26 from '../../../../public/Images/Services/Babyphotoshoot/babyphoto26.png';
-import babyphoto27 from '../../../../public/Images/Services/Babyphotoshoot/babyphoto27.png';
-
-
 
 const Babyphotoshoot = () => {
     useEffect(() => {
@@ -38,33 +9,33 @@ const Babyphotoshoot = () => {
       }, [])
 
     const babyphotophotocard =[
-        {id:1, img: babyphoto1},
-        {id:2, img: babyphoto2},
-        {id:3, img: babyphoto3},
-        {id:4, img: babyphoto27},
-        {id:5, img: babyphoto4},
-        {id:6, img: babyphoto5},
-        {id:7, img: babyphoto6},
-        {id:8, img: babyphoto7},
-        {id:9, img: babyphoto8},
-        {id:10, img: babyphoto9},
-        {id:11, img: babyphoto10},
-        {id:12, img: babyphoto11},
-        {id:13, img: babyphoto12},
-        {id:14, img: babyphoto13},
-        {id:15, img: babyphoto14},
-        {id:16, img: babyphoto15},
-        {id:17, img: babyphoto16},
-        {id:18, img: babyphoto17},
-        {id:19, img: babyphoto18},
-        {id:20, img: babyphoto19},
-        {id:21, img: babyphoto20},
-        {id:22, img: babyphoto21},
-        {id:23, img: babyphoto22},
-        {id:24, img: babyphoto23},
-        {id:25, img: babyphoto24},
-        {id:26, img: babyphoto25},
-        {id:27, img: babyphoto26}
+        {id:1, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707585173/Baby_Photoshoot/babyphoto22_sfkqjz.png'},
+        {id:2, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707585175/Baby_Photoshoot/babyphoto14_mr6mgo.png'},
+        {id:3, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707585174/Baby_Photoshoot/babyphoto18_hrfkvt.png'},
+        {id:4, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707585185/Baby_Photoshoot/babyphoto23_v5cg3p.png'},
+        {id:5, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707585184/Baby_Photoshoot/babyphoto24_gf1ilg.png'},
+        {id:6, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707585170/Baby_Photoshoot/babyphoto5_vzoq72.png'},
+        {id:7, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707585170/Baby_Photoshoot/babyphoto19_vpc1jo.png'},
+        {id:8, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707585169/Baby_Photoshoot/babyphoto17_iji4ht.png'},
+        {id:9, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707585160/Baby_Photoshoot/babyphoto16_bkrmqm.png'},
+        {id:10, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707585159/Baby_Photoshoot/babyphoto15_rihb7e.png'},
+        {id:11, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707585157/Baby_Photoshoot/babyphoto10_h28npn.png'},
+        {id:12, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707585155/Baby_Photoshoot/babyphoto11_sew1iz.png'},
+        {id:13, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707585154/Baby_Photoshoot/babyphoto12_nybnwm.png'},
+        {id:14, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707585154/Baby_Photoshoot/babyphoto13_qcfaqc.png'},
+        {id:15, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707585151/Baby_Photoshoot/babyphoto8_ndrftk.png'},
+        {id:16, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707585147/Baby_Photoshoot/babyphoto9_sof07z.png'},
+        {id:17, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707585146/Baby_Photoshoot/babyphoto7_opwfas.png'},
+        {id:18, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707585132/Baby_Photoshoot/babyphoto6_ubfmpl.png'},
+        {id:19, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707585130/Baby_Photoshoot/babyphoto4_cpsxjn.png'},
+        {id:20, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707585118/Baby_Photoshoot/babyphoto2_bnd7uh.png'},
+        {id:21, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707585117/Baby_Photoshoot/babyphoto21_uoglqp.png'},
+        {id:22, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707585116/Baby_Photoshoot/babyphoto1_k5nz6n.png'},
+        {id:23, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707585115/Baby_Photoshoot/babyphoto26_d3pjvj.png'},
+        {id:24, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707585116/Baby_Photoshoot/babyphoto3_noxuxf.png'},
+        {id:25, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707585110/Baby_Photoshoot/babyphoto27_mvy9wb.png'},
+        {id:26, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707585110/Baby_Photoshoot/babyphoto20_z1cd4d.png'},
+        {id:27, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707585109/Baby_Photoshoot/babyphoto25_pynirg.png'}
     ]
 
   return (
@@ -72,7 +43,7 @@ const Babyphotoshoot = () => {
          <div className='grid grid-cols-2 md:grid-cols-5 px-[24px] xl:px-20 gap-4 md:gap-4 py-[40px] md:py-[60px] xl:py-[60px]'>
             {babyphotophotocard.map((items)=>{return(
                 <div key={items.id}>
-                    <Image src={items.img} alt='Babyphotoshoot' data-aos='zoom-in' data-aos-delay="200" data-aos-once="true" />
+                    <Image src={items.img} width={370} height={430} alt='Babyphotoshoot' data-aos='zoom-in' data-aos-delay="200" data-aos-once="true" />
                 </div>
             )})}
         </div>

@@ -1,118 +1,70 @@
-import Image from "next/image" 
-import leftgallery1 from '../../../../public/Images/Services/Wedding/Weeding_service22.png'
-import leftgallery2 from '../../../../public/Images/Services/Wedding/Weeding_service9.png'
-import leftgallery3 from '../../../../public/Images/Services/Wedding/Weeding_service14.png'
-import leftgallery4 from '../../../../public/Images/Services/Wedding/Weeding_service3.png'
-import centerimg1 from '../../../../public/Images/Services/Wedding/Weeding_service13.png'
-import leftgaller5 from '../../../../public/Images/Services/Wedding/Weeding_service7.png'
-import leftgaller6 from '../../../../public/Images/Services/Wedding/Weeding_service26.png'
-import leftgaller7 from '../../../../public/Images/Services/Wedding/Weeding_service20.png'
-import leftgaller8 from '../../../../public/Images/Services/Wedding/Weeding_service21.png'
-import prewedding1 from '../../../../public/Images/Services/Prewedding/pre1.png'
-import prewedding2 from '../../../../public/Images/Services/Prewedding/pre22.png'
-import prewedding3 from '../../../../public/Images/Services/Prewedding/pre8.png'
-import prewedding4 from '../../../../public/Images/Services/Prewedding/pre20.png'
-import preweddingcenter from '../../../../public/Images/Services/Prewedding/pre17.png'
-import prewedding5 from '../../../../public/Images/Services/Prewedding/pre2.png'
-import prewedding6 from '../../../../public/Images/Services/Prewedding/pre7.png'
-import prewedding7 from '../../../../public/Images/Services/Prewedding/pre11.png'
-import prewedding8 from '../../../../public/Images/Services/Prewedding/pre9.png'
-import engagement1 from '../../../../public/Images/Services/Engagement/Engagement1.png'
-import engagement2 from '../../../../public/Images/Services/Engagement/Engagement34.png'
-import engagement3 from '../../../../public/Images/Services/Engagement/Engagement38.png'
-import engagement4 from '../../../../public/Images/Services/Engagement/Engagement47.png'
-import engagementcenter from '../../../../public/Images/Services/Engagement/Engagement20.png'
-import engagement5 from '../../../../public/Images/Services/Engagement/Engagement10.png'
-import engagement6 from '../../../../public/Images/Services/Engagement/Engagement44.png'
-import engagement7 from '../../../../public/Images/Services/Engagement/Engagement32.png'
-import engagement8 from '../../../../public/Images/Services/Engagement/Engagement2.png'
-import birthday1 from '../../../../public/Images/Services/Birthday/birthday9.png';
-import birthday2 from '../../../../public/Images/Services/Birthday/birthday17.png';
-import birthday3 from '../../../../public/Images/Services/Birthday//birthdaythirtynine.png';
-import birthday4 from '../../../../public/Images/Services/Birthday/birthdaytwentyfour.png';
-import birthdaycenter from '../../../../public/Images/Services/Birthday/birthdayfiftynine.png';
-import birthday5 from '../../../../public/Images/Services/Birthday/birthdaysixtyone.png';
-import birthday6 from '../../../../public/Images/Services/Birthday/birthdayfourtyeight.png';
-import birthday7 from '../../../../public/Images/Services/Birthday/birthdayninteyone.png';
-import birthday8 from '../../../../public/Images/Services/Birthday/birthdayeightythree.png';
-
-import babyshower1 from '../../../../public/Images/Services/Babyshower/baby35.png';
-import babyshower2 from '../../../../public/Images/Services/Babyshower/baby20.png';
-import babyshower3 from '../../../../public/Images/Services/Babyshower/baby6.png';
-import babyshower4 from '../../../../public/Images/Services/Babyshower/baby38.png';
-import babyshowercenter from '../../../../public/Images/Services/Babyshower/baby21.png';
-import babyshower5 from '../../../../public/Images/Services/Babyshower/baby24.png';
-import babyshower6 from '../../../../public/Images/Services/Babyshower/baby14.png';
-import babyshower7 from '../../../../public/Images/Services/Babyshower/baby30.png';
-import babyshower8 from '../../../../public/Images/Services/Babyshower/baby27.png';
- 
- const ServicesGallery = [
+const ServicesGallery = [
     
    { 
     id:1,
     title: "Prewedding",
-    leftimage1: prewedding3,
-    leftimage2: prewedding2,
-    leftimage3: prewedding1,
-    leftimage4: prewedding4,
-    centerimage: preweddingcenter,
-    leftimage5: prewedding5,
-    leftimage6: prewedding8,
-    leftimage7: prewedding7,
-    leftimage8: prewedding6,
+    leftimage1: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707651620/Home_ourgallery/Prewedding/pre8_rvxfpt.png',
+    leftimage2: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707651620/Home_ourgallery/Prewedding/pre7_j281cy.png',
+    leftimage3: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707651620/Home_ourgallery/Prewedding/pre9_n8zaum.png',
+    leftimage4: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707651619/Home_ourgallery/Prewedding/pre2_g3qq6e.png',
+    centerimage: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707651618/Home_ourgallery/Prewedding/pre18_bqchen.png',
+    leftimage5: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707651618/Home_ourgallery/Prewedding/pre20_v2uces.png',
+    leftimage6: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707651618/Home_ourgallery/Prewedding/pre11_cz1bqh.png',
+    leftimage7: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707651618/Home_ourgallery/Prewedding/pre1_f0d5ax.png',
+    leftimage8: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707651624/Home_ourgallery/Prewedding/pre22_dx1liq.png',
 },
 {
     id:2,
     title: "Weddings",
-    leftimage1: leftgallery1,
-    leftimage2: leftgallery3,
-    leftimage3: leftgallery2,
-    leftimage4: leftgallery4,
-    centerimage: centerimg1,
-    leftimage5: leftgaller5,
-    leftimage6: leftgaller6,
-    leftimage7: leftgaller7,
-    leftimage8: leftgaller8,
+    leftimage1: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707651826/Home_ourgallery/Wedding/Weeding_service3_h4co26.png',
+    leftimage2: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707651825/Home_ourgallery/Wedding/Weeding_service7_vjloee.png',
+    leftimage3: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707651825/Home_ourgallery/Wedding/Weeding_service14_slan7h.png',
+    leftimage4: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707651823/Home_ourgallery/Wedding/Weeding_service8_o7gblh.png',
+    centerimage: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707651824/Home_ourgallery/Wedding/Weeding_service10_ghvw2q.png',
+    leftimage5: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707651822/Home_ourgallery/Wedding/Weeding_service20_rge4il.png',
+    leftimage6: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707651822/Home_ourgallery/Wedding/Weeding_service26_gdyhz1.png',
+    leftimage7: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707651821/Home_ourgallery/Wedding/Weeding_service22_pwwdk7.png',
+    leftimage8: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707651821/Home_ourgallery/Wedding/Weeding_service21_g2c59r.png',
     },
     
 {   
     id:3,
     title: "Engagement",
-    leftimage1: engagement1,
-    leftimage2: engagement2,
-    leftimage3: engagement3,
-    leftimage4: engagement4,
-    centerimage: engagementcenter,
-    leftimage5: engagement5,
-    leftimage6: engagement6,
-    leftimage7: engagement7,
-    leftimage8: engagement8,
+    leftimage1: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707652360/Home_ourgallery/Engagement/Engagement20_wmglob.png',
+    leftimage2: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707652362/Home_ourgallery/Engagement/Engagement44_hyhwth.png',
+    leftimage3: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707652360/Home_ourgallery/Engagement/Engagement20_wmglob.png',
+    leftimage4: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707652360/Home_ourgallery/Engagement/Engagement47_elzvgc.png',
+    centerimage: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707652360/Home_ourgallery/Engagement/Engagement20_wmglob.png',
+    leftimage5: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707652361/Home_ourgallery/Engagement/Engagement32_ahwxll.png',
+    leftimage6: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707652360/Home_ourgallery/Engagement/Engagement1_r83zne.png',
+    leftimage7: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707652360/Home_ourgallery/Engagement/Engagement2_xfr3it.png',
+    leftimage8: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707652359/Home_ourgallery/Engagement/Engagement10_mqyn9x.png',
 },
 {   
     id:4,
     title: "Birthday",
-    leftimage1: birthday1,
-    leftimage2: birthday2,
-    leftimage3: birthday3,
-    leftimage4: birthday4,
-    centerimage: birthdaycenter,
-    leftimage5: birthday5,
-    leftimage6: birthday6,
-    leftimage7: birthday7,
-    leftimage8: birthday8,
+    leftimage1: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707653141/Home_ourgallery/Birthday/birthdaythirtynine_lfljpe.png',
+    leftimage2: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707653141/Home_ourgallery/Birthday/birthdaythirtynine_lfljpe.png',
+    leftimage3: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707653140/Home_ourgallery/Birthday/birthdayfourtyeight_t7jnnu.png',
+    leftimage4: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707653138/Home_ourgallery/Birthday/birthdayeightythree_xehoo9.png',
+    centerimage: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707653140/Home_ourgallery/Birthday/birthdayninteyone_cnbsfe.png',
+    leftimage5: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707653138/Home_ourgallery/Birthday/birthdayfiftynine_iz0i8h.png',
+    leftimage6: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707653138/Home_ourgallery/Birthday/birthdaytwentyfour_k1scyv.png',
+    leftimage7: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707653138/Home_ourgallery/Birthday/birthday17_cjk8hu.png',
+    leftimage8: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707653138/Home_ourgallery/Birthday/birthday1_ixyuul.png',
 },
 {   
     id:4,
     title: "Baby Shower",
-    leftimage1: babyshower1,
-    leftimage2: babyshower2,
-    leftimage3: babyshower3,
-    leftimage4: babyshower4,
-    centerimage: babyshowercenter,
-    leftimage5: babyshower5,
-    leftimage6: babyshower6,
-    leftimage7: babyshower7,
-    leftimage8: babyshower8,
+    leftimage1: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707653749/Home_ourgallery/Babyshower/baby6_lqalq6.png',
+    leftimage2: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707653716/Home_ourgallery/Babyshower/baby14_nxxoec.png',
+    leftimage3: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707653747/Home_ourgallery/Babyshower/baby38_vkqyjd.png',
+    leftimage4: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707653746/Home_ourgallery/Babyshower/baby35_zpderw.png',
+    centerimage: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707653745/Home_ourgallery/Babyshower/baby30_sj602w.png',
+    leftimage5: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707653744/Home_ourgallery/Babyshower/baby27_d5if8f.png',
+    leftimage6: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707653743/Home_ourgallery/Babyshower/baby24_pincsb.png',
+    leftimage7: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707653743/Home_ourgallery/Babyshower/baby20_ebvqho.png',
+    leftimage8: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707653745/Home_ourgallery/Babyshower/baby21_ffdjbb.png',
 },
 
 ]
