@@ -11,13 +11,12 @@ input:focus{outline: none;}
 select:focus{outline: none;}
 textarea:focus{outline:none; }
 .errormessage{font-size:14px;}
-
 ::placeholder {
     font-size: 13.6px;
-    color: #c48f56;
+    color: #c48f56 !important;
   }
   ::-ms-input-placeholder { /* Edge 12 -18 */
     font-size: 13.6px;
     color: #c48f56;
   }
-
+  p, span{font-family: "Josefin Slab", serif;}

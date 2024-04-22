@@ -1,8 +1,6 @@
 import React,{useEffect} from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import footerbg from '../../public/Images/Footer/new_footer.png';
-import footerbgmob from '../../public/Images/Footer/footerbg.png';
 import footerlogo from '../../public/Images/Proadosh_logo.png';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
@@ -38,20 +36,20 @@ const Footer = () => {
   return (
     <>
       <div className='relative' data-aos ='fade' data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" data-aos-once="true">
-          <Image src={footerbg} 
+          <Image src="https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707057320/Footer/footer_iycnry.png" 
             width={1950}
             height={400}
             alt='Logo'
             className='hidden md:flex object-cover md:h-[420px] xl:h-[100%]'
           />
-          <Image src={footerbgmob} 
+          <Image src="https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707057364/Footer/mobilefooter_y9lcph.png" 
             width={650}
             height={650}
             alt='Logo'
-            className='md:hidden h-[750px] object-cover'
+            className='md:hidden h-[780px] object-cover'
           />
           <div>
-          <div className='w-full absolute top-[20px] md:top-[15%] text-left flex flex-col'>
+          <div className='w-full absolute top-[40px] md:top-[15%] text-left flex flex-col'>
             <div className='flex flex-col md:flex-row justify-between px-[20px] md:px-[24px] xl:px-20'>
               
               
@@ -72,9 +70,9 @@ const Footer = () => {
                 <h3 className='text-white mb-[10px] md:mb-[20px] mt-[15px] md:mt-[0px] font-[400] text-[18px] md:text-[20px] tracking-[1px] font-coromont'>Quick Links</h3>
                   {colone.map((footerone) =>{
                     return(
-                      <ul key={footerone.id} className='text-[#ececec] pb-[12px] text-[14.5px]'>
-                        <Link href={footerone.url}>
-                        <li className='space-y-8 md:tracking-[0.7px] transition-all duration-150 hover:text-gold'>{footerone.name}</li>
+                      <ul key={footerone.id} className='text-[#ececec] pb-[12px] text-[16px] '>
+                        <Link href={footerone.url} className='w-min'>
+                        <li className='font-coromont space-y-8 md:tracking-[0.7px] transition-all duration-150 hover:text-gold w-fit'>{footerone.name}</li>
                         </Link>
                       </ul>
                     )
@@ -92,9 +90,9 @@ const Footer = () => {
                 <h3 className='text-white mb-[10px] md:mb-[20px] mt-[15px] md:mt-[0px] font-[400] text-[18px] md:text-[20px] tracking-[1px] font-coromont'>Services</h3>
                   {coltwo.map((footertwo) =>{
                     return(
-                      <ul key={footertwo.id} className='text-[#ececec] pb-[12px] text-[14.5px]'>
+                      <ul key={footertwo.id} className='text-[#ececec] pb-[12px] text-[16px]'>
                         <Link href={footertwo.url}>
-                          <li className='space-y-8 md:tracking-[0.7px] transition-all duration-150 hover:text-gold'>{footertwo.name}</li>
+                          <li className='font-coromont space-y-8 md:tracking-[0.7px] transition-all duration-150 hover:text-gold'>{footertwo.name}</li>
                         </Link>
                       </ul>
                     )
@@ -110,9 +108,9 @@ const Footer = () => {
                 <h3 className='text-white mb-[10px] md:mb-[20px] mt-[15px] md:mt-[0px] font-[400] text-[18px] md:text-[20px] tracking-[1px] font-coromont'>Other Services</h3>
                   {colthree.map((footerthree) =>{
                     return(
-                      <ul key={footerthree.id} className='text-[#ececec] pb-[12px] text-[14.5px] '>
+                      <ul key={footerthree.id} className='text-[#ececec] pb-[12px] text-[16px] '>
                         <Link href={footerthree.url}>
-                          <li className='space-y-8 md:tracking-[0.7px] transition-all duration-150 hover:text-gold'>{footerthree.name}</li>
+                          <li className='font-coromont space-y-8 md:tracking-[0.7px] transition-all duration-150 hover:text-gold'>{footerthree.name}</li>
                         </Link>
                       </ul>
                     )
@@ -125,11 +123,11 @@ const Footer = () => {
                 <React.Fragment>
                 <h3 className='mb-[10px] md:mb-[20px] font-[400] text-[18px] md:text-[20px] tracking-[1px] font-coromont'>Social Links</h3>
                 <Link href='tel:8984103719' className='md:tracking-[0.7px]'>
-                    <span>+91 8984103719</span>
+                    <span className='text-[16px]'>+91 8984103719</span>
                   </Link>
 
                   <Link href='mailto:info@pradoshphotography.com' className='mt-3 md:tracking-[0.7px]'>
-                    <span>info@pradoshphotography.com</span>
+                    <span className='text-[16px]'>info@pradoshphotography.com</span>
                   </Link>
                 </React.Fragment>
               </div>

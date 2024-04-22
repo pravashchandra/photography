@@ -2,30 +2,6 @@ import React, {useEffect} from 'react';
 import Image from 'next/image';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
-import Namingone from '../../../../public/Images/Services/Naming/Naming1.png';
-import Namingtwo from '../../../../public/Images/Services/Naming/Naming2.png';
-import Namingthree from '../../../../public/Images/Services/Naming/Naming3.png';
-import Namingfive from '../../../../public/Images/Services/Naming/Naming4.png';
-import Namingsix from '../../../../public/Images/Services/Naming/Naming5.png';
-import Namingseven from '../../../../public/Images/Services/Naming/Naming6.png';
-import Namingeight from '../../../../public/Images/Services/Naming/Naming7.png';
-import Namingnine from '../../../../public/Images/Services/Naming/Naming8.png';
-import Namingten from '../../../../public/Images/Services/Naming/Naming9.png';
-import Namingeleven from '../../../../public/Images/Services/Naming/Naming14.png';
-import Namingtwelve from '../../../../public/Images/Services/Naming/Naming15.png';
-import Namingthirteen from '../../../../public/Images/Services/Naming/Naming16.png';
-import Namingfifteen from '../../../../public/Images/Services/Naming/Naming17.png';
-import Namingsixteen from '../../../../public/Images/Services/Naming/Naming18.png';
-import Namingseventeen from '../../../../public/Images/Services/Naming/Naming19.png';
-import Namingeighteen from '../../../../public/Images/Services/Naming/Naming20.png';
-import Namingninteen from '../../../../public/Images/Services/Naming/Naming21.png';
-import Namingtwenty from '../../../../public/Images/Services/Naming/Naming22.png';
-import Namingtwentyone from '../../../../public/Images/Services/Naming/Naming23.png';
-import Namingtwentytwo from '../../../../public/Images/Services/Naming/Naming29.png';
-import Namingtwentythree from '../../../../public/Images/Services/Naming/Naming30.png';
-import Namingtwentyfour from '../../../../public/Images/Services/Naming/Naming31.png';
-import Namingtwentyfive from '../../../../public/Images/Services/Naming/Naming32.png';
-import Namingtwentysix from '../../../../public/Images/Services/Naming/Naming33.png';
 
 const Namingceremony = () => {
     useEffect(() => {
@@ -33,30 +9,30 @@ const Namingceremony = () => {
       }, [])
 
     const Namingceremonydata =[
-        {id:1, img: Namingone},
-        {id:2, img: Namingtwo},
-        {id:3, img: Namingthree},
-        {id:4, img: Namingfive},
-        {id:5, img: Namingsix},
-        {id:6, img: Namingseven},
-        {id:7, img: Namingeight},
-        {id:8, img: Namingnine},
-        {id:9, img: Namingten},
-        {id:10, img: Namingeleven},
-        {id:11, img: Namingtwelve},
-        {id:12, img: Namingthirteen},
-        {id:13, img: Namingfifteen},
-        {id:14, img: Namingsixteen},
-        {id:15, img: Namingseventeen},
-        {id:16, img: Namingeighteen},
-        {id:17, img: Namingninteen},
-        {id:18, img: Namingtwenty},
-        {id:19, img: Namingtwentyone},
-        {id:20, img: Namingtwentytwo},
-        {id:21, img: Namingtwentythree},
-        {id:22, img: Namingtwentyfour},
-        {id:23, img: Namingtwentyfive},
-        {id:24, img: Namingtwentysix}
+        {id:1, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707583372/Naming/Naming5_yv8nvc.png'},
+        {id:2, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707583371/Naming/Naming6_fhiqal.png'},
+        {id:3, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707583371/Naming/Naming4_ibaakk.png'},
+        {id:4, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707583371/Naming/Naming4_ibaakk.png'},
+        {id:5, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707583371/Naming/Naming2_ghcyob.png'},
+        {id:6, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707583371/Naming/Naming1_ylo9lj.png'},
+        {id:7, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707583370/Naming/Naming32_m93cgx.png'},
+        {id:8, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707583370/Naming/Naming30_z2pvf9.png'},
+        {id:9, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707583370/Naming/Naming23_qse8i8.png'},
+        {id:10, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707583370/Naming/Naming33_pqslip.png'},
+        {id:11, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707583370/Naming/Naming21_kf0jpm.png'},
+        {id:12, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707583370/Naming/Naming22_rt2nyp.png'},
+        {id:13, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707583370/Naming/Naming19_sjhvp9.png'},
+        {id:14, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707583369/Naming/Naming31_lt413r.png'},
+        {id:15, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707583369/Naming/Naming31_lt413r.png'},
+        {id:16, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707583369/Naming/Naming20_srxgjn.png'},
+        {id:17, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707583369/Naming/Naming17_yoxhff.png'},
+        {id:18, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707583369/Naming/Naming16_ww6fxu.png'},
+        {id:19, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707583369/Naming/Naming14_wnwyot.png'},
+        {id:20, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707583369/Naming/Naming29_v82dwl.png'},
+        {id:21, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707583369/Naming/Naming15_creflp.png'},
+        {id:22, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707583368/Naming/Naming9_blx3pi.png'},
+        {id:23, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707583368/Naming/Naming8_e3mpyh.png'},
+        {id:24, img: 'https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707583368/Naming/Naming7_j5fm7q.png'}
     ]
 
   return (
@@ -64,7 +40,7 @@ const Namingceremony = () => {
          <div className='grid grid-cols-2 md:grid-cols-5 px-[24px] xl:px-20 gap-4 md:gap-4 py-[40px] md:py-[60px] xl:py-[60px]'>
             {Namingceremonydata.map((items)=>{return(
                 <div key={items.id}>
-                    <Image src={items.img} alt='Namingceremony' data-aos='zoom-in' data-aos-delay="200" data-aos-once="true"/>
+                    <Image src={items.img} alt='Namingceremony' width={370} height={430}  data-aos='zoom-in' data-aos-delay="200" data-aos-once="true"/>
                 </div>
             )})}
         </div>
