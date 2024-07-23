@@ -42,10 +42,16 @@ const NavBar = () => {
 
   // Popup Contact Form Event Starts  here
   const [showPopup, setShowPopup] = useState(false);
-
-  const toggleContactForm =() =>{
-  setShowPopup(!showPopup)
-  }
+  useEffect(() => {
+    if (typeof document !== 'undefined') {
+      if (showPopup) {
+        document.body.style.overflow = 'hidden';
+      } else {
+        document.body.style.overflow = 'auto';
+      }
+    }
+  }, [showPopup]);
+  // showPopup?document.body.style.overflow = 'hidden': document.body.style.overflow ="auto"
  // Popup Contact Form Event End here
 
   return (
@@ -65,8 +71,8 @@ const NavBar = () => {
         {/*------------Desktop Menu Bar----------- */}
         <div className='hidden md:flex md:py-[24px] xl:py-6 text-white md:text-[15px] lg:text-[17px] tracking-[1px]'>
           <div className='flex md:space-x-2 lg:space-x-8'>
-            <ul className='flex md:space-x-6 xl:space-x-16 font-josefin font-[300]'>
-              <li className='font-josefin'><Link href="/" className={`${isActive ? "font-bold" : ""} font-josefin`}>Home</Link></li>
+            <ul className='flex flex-row gap-14 font-proximaregular gap- font-[300] text-[19px] items-center'>
+              <li className='font-proximaregular'><Link href="/" className={`${isActive ? "font-bold" : ""} font-YourCustomFont`}>Home</Link></li>
               <li><Link href="/about" className="font-josefin">About Us</Link></li>
               <li className='flex'
               onMouseEnter={()=>setShowSubMenu(true)}
@@ -79,21 +85,14 @@ const NavBar = () => {
               </li>
               <li><Link href="/#gallery" className='font-josefin'>Gallery</Link></li>
               <li><Link href="/contact" className='font-josefin'>Contact</Link></li>
+               {showPopup && <Popupcontact onClose={()=>setShowPopup(false)}/>}
+               <div className='cursor-pointer' onClick={() =>setShowPopup(true)}>
+                  <p className='relative flex h-[42px] md:h-[38px] lg:h-[45px] w-[150px] md:w-[140px] lg:w-[160px] items-center justify-center overflow-hidden bg-transprent text-white font-josefin uppercase text-[13px] md:text-[13px] lg:text-[15px] tracking-[1px] border border-white transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-gold hover:text-white hover:border-gold before:duration-500 before:ease-out hover:before:h-56 hover:before:w-56'>
+                    <span className="relative z-10" >Get a Quote</span>
+                  </p>
+                </div>
             </ul>  
           </div> 
-        </div>
-        
-
-        <div className='hidden md:flex'>
-          
-          <button 
-            className='relative flex h-[35px] md:h-[35px] lg:h-[40px] w-[130px] md:w-[130px] lg:w-[160px] items-center justify-center overflow-hidden bg-transprent text-white font-josefin uppercase text-[12px] md:text-[12px] tracking-[1px] border border-white shadow-md transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-gold hover:text-white hover:border-gold before:duration-500 before:ease-out hover:shadow-gold-600 hover:before:h-56 hover:before:w-56'
-            onClick={toggleContactForm}
-          >
-           
-              <span className='relative z-10'>Get a quote</span>
-              {showPopup && <Popupcontact toggleContactForm={toggleContactForm}/> }
-          </button>
         </div>
       </div>
 

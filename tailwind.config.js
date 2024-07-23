@@ -4,9 +4,10 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        coromont: ['Cormorant Garamond', 'serif'],
+        coromont: ['Cormorant', 'serif'],
         josefin: ['Josefin Slab', 'serif'],
-        tangerian: ['Tangerine', 'cursive']
+        tangerian: ['Tangerine', 'cursive'],
+        YourCustomFont: ['YourCustomFont']
       },
       colors: {
         'lightgold': '#FAF0E6',

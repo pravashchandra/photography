@@ -60,50 +60,63 @@ const ContactForm = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className='emailForm'>
-      <input
-        type="text"
-        placeholder="Your Name"
-        value={name}
-        required={true}
-        onChange={(e) => setName(e.target.value)}
-      />
-      <input 
-        type="tel"
-        placeholder='Mobile Number'
-        value={mobile}
-        className='mt-5'
-        minLength={10}
-        maxLength={10}
-        required={true}
-        onChange={(e) => setMobile(e.target.value)}
-        
-      />
-      <input  
-        type="email"
-        placeholder="Your Email"
-        value={email}
-        required={true}
-        className='mt-5'
-        onChange={(e) => setEmail(e.target.value)}
+    <form onSubmit={handleSubmit} className='emailForm flex flex-col gap-8'>
+      <div className='w-full flex flex-col md:flex-row justify-between items-center gap-8 md:gap-4'>
+        <div className='w-full md:w-[50%]'>
+          <input
+          type="text"
+          placeholder="Your Name"
+          value={name}
+          required={true}
+          onChange={(e) => setName(e.target.value)}
+          />
+        </div>
 
-      />
-      <select className='mt-5'>
-      <option value="" defaultValue disabled hidden>Select Services</option>
-        <option value="photography">Weeding Photography</option>
-        <option value="prewedding">Pre-Weeding Photography</option>
-        <option value="engagement">Engagement Photography</option>
-        <option value="birthday">Birthday Photography</option>
-        <option value="maternity">Maternity Photography</option>
-        <option value="baby-shower">Baby Shower Photography</option>
-        <option value="annaparsana">Annaparsana Photography</option>
-        <option value="anniversary">Anniversary Photography</option>
-        <option value="corporate">Corporate Photography</option>
-        <option value="babyphotoshoot">Baby Photoshoot</option>
-        <option value="housewarming">House Warming</option>
-        <option value="naimgceremony">Naming ceremony</option>
-        <option value="others">Othres</option>
-      </select>
+        <div className='w-full md:w-[50%]'>
+          <input 
+          type="tel"
+          placeholder='Mobile Number'
+          value={mobile}
+          minLength={10}
+          maxLength={10}
+          required={true}
+          onChange={(e) => setMobile(e.target.value)} 
+          />
+        </div>
+      </div>
+      
+      <div className='w-full flex flex-col md:flex-row justify-between items-center gap-8 md:gap-4'>
+        <div className='w-full md:w-[50%]'>
+          <input  
+          type="email"
+          placeholder="Your Email"
+          value={email}
+          required={true}
+          onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+
+        <div className='w-full md:w-[50%]'>
+          <select>
+            <option value="" defaultValue disabled hidden>Select Services</option>
+            <option value="photography">Weeding Photography</option>
+            <option value="prewedding">Pre-Weeding Photography</option>
+            <option value="engagement">Engagement Photography</option>
+            <option value="birthday">Birthday Photography</option>
+            <option value="maternity">Maternity Photography</option>
+            <option value="baby-shower">Baby Shower Photography</option>
+            <option value="annaparsana">Annaparsana Photography</option>
+            <option value="anniversary">Anniversary Photography</option>
+            <option value="corporate">Corporate Photography</option>
+            <option value="babyphotoshoot">Baby Photoshoot</option>
+            <option value="housewarming">House Warming</option>
+            <option value="naimgceremony">Naming ceremony</option>
+            <option value="others">Othres</option>
+          </select>
+        </div>
+      </div>
+      
+  
 
       <textarea
         cols="50"
@@ -119,7 +132,7 @@ const ContactForm = () => {
        sitekey='6LdptVEpAAAAANxnwckQ93C4ROV_F0NBXekU1ieN'
        onChange={(val)=>setCapValue(val)}
        /> */}
-      <button type="submit" className="relative flex h-[45px] w-[170px] mt-[30px] items-center justify-center overflow-hidden bg-transpernt text-gold font-josefin uppercase text-[13px] tracking-[1px] border border-gold shadow-sm transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-gold hover:text-white hover:border-gold before:duration-500 before:ease-out hover:shadow-gold-600 hover:before:h-56 hover:before:w-56">
+      <button type="submit" className="relative flex h-[45px] w-[170px] mt-[5px] items-center justify-center overflow-hidden bg-transpernt text-gold font-josefin uppercase text-[13px] tracking-[1px] border border-gold shadow-sm transition-all before:absolute before:h-0 before:w-0 before:rounded-full before:bg-gold hover:text-white hover:border-gold before:duration-500 before:ease-out hover:shadow-gold-600 hover:before:h-56 hover:before:w-56">
         <span className="relative z-10">Send Email</span>     
       </button>
 

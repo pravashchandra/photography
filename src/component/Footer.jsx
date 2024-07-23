@@ -6,6 +6,8 @@ import Aos from 'aos';
 import 'aos/dist/aos.css'
 
 const Footer = () => {
+  const date = new Date();
+  const year = date.getFullYear();
   useEffect(() => {
     Aos.init();
   }, [])
@@ -34,6 +36,7 @@ const Footer = () => {
   ]
 
   return (
+   
     <>
       <div className='relative' data-aos ='fade' data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" data-aos-once="true">
           <Image src="https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707057320/Footer/footer_iycnry.png" 
@@ -135,7 +138,7 @@ const Footer = () => {
             </div>
 
             <div className='flex md:justify-center mx-[20px] md:mx-20 pt-[50px] xl:pt-[90px] text-[#ececec] text-[12px] md:text-[14px] md:tracking-[0.7px]'>
-              <p>Copyright © 2023 Pradosh Photography All Rights Reserved</p>
+              <p>Copyright © {year} Pradosh Photography All Rights Reserved</p>
           </div>
           </div>
       </div>

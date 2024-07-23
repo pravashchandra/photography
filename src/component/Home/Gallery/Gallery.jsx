@@ -11,7 +11,7 @@ const Gallery = ({items}) => {
   
   return (
     <>
-      <div className='w-[100%] pt-[25px] xl:pt-[20px] px-[24px] xl:px-20 pb-[70px] xl:pb-[60px] flex items-center justify-center'>
+      <div className='w-[100%] pt-[25px] xl:pt-[20px] px-[24px] xl:px-20 pb-[100px] xl:pb-[60px] flex items-center justify-center'>
         <div className='space-y-4 items-center flex-col'>
           {/* <h2 className='font-tangerine text-[38px] text-center'>{title}</h2> */}
          

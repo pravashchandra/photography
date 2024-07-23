@@ -45,7 +45,8 @@ import { BiChevronRight } from 'react-icons/bi';
      };
     return (
       <>
-      <h3 className='font-coromont text-[28px] md:text-[32px] lg:text-[35px] xl:text-[45px] mb-0 md:-mb-8 leading-[1.3em] md:leading-[1.2em] text-center xl:pt-[20px]' >What My <span className='text-[#C48F56]'>Client</span> Says <br className='flex md:hidden'/> About Me.</h3>
+      <div className='pb-[70px]'>
+      <h3 className='font-coromont text-[28px] md:text-[32px] lg:text-[35px] xl:text-[45px] mb-0 md:-mb-8 leading-[1.3em] md:leading-[1.2em] text-center xl:pt-[20px]' >What My <span className='text-[#C48F56] font-coromont'>Client</span> Says <br className='flex md:hidden'/> About Me.</h3>
       <div className='px-[24px] md:px-[24px] xl:px-20 py-4 relative md:flex md:flex-col-reverse '>
         
           <Carousel
@@ -73,6 +74,7 @@ import { BiChevronRight } from 'react-icons/bi';
               )
             })}
           </Carousel>
+      </div>
       </div>
       </>
     );

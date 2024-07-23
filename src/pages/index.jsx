@@ -10,6 +10,7 @@ import Card from '@/component/Home/Services/Card';
 import Ourservices from '@/component/Home/Services/Ourservices';
 import Testimonialcard from '@/component/Home/testimonials/Testimonialcard';
 import Head from 'next/head';
+import Videobanner from '@/component/Videobanner';
 
 
 const home = () => {
@@ -31,6 +32,7 @@ const home = () => {
       <Slider />
       <AboutMe />
       <Ourservices />
+      <Videobanner />
       <GalleryFilter/>
       <Testimonialcard />
       <GetInTouch />

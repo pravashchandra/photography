@@ -31,7 +31,6 @@ const Contact = () => {
     {/* Conatct Page Banner Starts Here */}
     <AllPageBanner 
       title="Contact Us"
-      button="Contact Us"
       bgImage='https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707654557/Contact/Contact_bannerr_hhwzjt.png'
       mobBgImage='https://res.cloudinary.com/dqnlbtgdl/image/upload/v1707654557/Contact/Contact_Mob_Bannerr_sbiypm.png'
     />
