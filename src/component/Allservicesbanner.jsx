@@ -15,14 +15,14 @@ const Allservicesbanner = ({bgImage,mobBgImage, title, button}) => {
             <div className='relative w-[100%]'>
                 <Image src={bgImage}
                 alt='Servicebanner'
-                width={100}
-                height={100}
+                width={1920}
+                height={600}
                 className='w-auto h-auto object-cover hidden md:flex'
                 />
                 <Image src={mobBgImage}
                 alt='Service Banner'
-                width={100}
-                height={100}
+                width={360}
+                height={650}
                 className='w-[100%] object-cover h-[650px] flex md:hidden'
                 />
                 <div className='absolute top-[45%] left-[50%] translate-x-[-50%] flex flex-col justify-center text-center mx-auto w-[100%]'>

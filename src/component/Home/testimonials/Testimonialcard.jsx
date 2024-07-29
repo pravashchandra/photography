@@ -34,8 +34,7 @@ import { BiChevronRight } from 'react-icons/bi';
     const ButtonGroup = ({ next, previous, goToSlide, ...rest }) => {
       const { carouselState: { currentSlide } } = rest;
       return (
-          <div className="carousel-button-group gap-4 flex justify-end mt-4 md:mt-0 md:mb-4 
-          items-center w-full">
+          <div className="carousel-button-group gap-4 flex justify-end mt-4 md:mt-0 md:mb-4 items-center w-full">
             <button className='block p-1 rounded-full bg-gold text-white text-[25px]' onClick={() => 
             previous()}> <FiChevronLeft /></button>
             <button onClick={() => next()}><span className='block p-1 rounded-full bg-gold text-white text-[25px]' ><BiChevronRight /></span></button>
@@ -46,7 +45,7 @@ import { BiChevronRight } from 'react-icons/bi';
     return (
       <>
       <div className='pb-[70px]'>
-      <h3 className='font-coromont text-[28px] md:text-[32px] lg:text-[35px] xl:text-[45px] mb-0 md:-mb-8 leading-[1.3em] md:leading-[1.2em] text-center xl:pt-[20px]' >What My <span className='text-[#C48F56] font-coromont'>Client</span> Says <br className='flex md:hidden'/> About Me.</h3>
+      <h3 className='font-coromont text-[32px] md:text-[32px] lg:text-[35px] xl:text-[50px] mb-0 md:-mb-8 leading-[1.3em] md:leading-[1.3em] text-center xl:pt-[20px]' >What My <span className='text-[#C48F56] font-coromont'>Client</span> Says <br className='flex md:hidden'/> About Me.</h3>
       <div className='px-[24px] md:px-[24px] xl:px-20 py-4 relative md:flex md:flex-col-reverse '>
         
           <Carousel

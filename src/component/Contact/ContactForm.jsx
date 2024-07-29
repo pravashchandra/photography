@@ -1,34 +1,27 @@
 import React, { useState, useEffect } from 'react'
 import emailjs from '@emailjs/browser';
-import ReCAPTCHA from 'react-google-recaptcha';
+import { Form, useFormik } from 'formik';
+import { contactForm } from '@/schemas';
 
 const initialValues = {
   name: "",
   mobile: "",
   email: "",
+  service: "",
   message: "",
 
 };
+
+const onSubmit =async (values, actions) =>{
+await new Promise((resolve, reject) => setTimeout(resolve,1000))
+}
 const ContactForm = () => {
-
-  const [name, setName] = useState('');
-  const [mobile, setMobile] = useState('');
-  const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
   const [showSuccess, setShowSuccess] = useState(false);
-  // const [capValue, setCapValue] = useState('');
 
-  useEffect(() => {
-    setTimeout(()=>{
-      setShowSuccess(false)
-    }, 5000)
-
-  },[showSuccess])
-  
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
+  const {values, errors, touched, handleBlur, handleChange, handleSubmit, setValues} = useFormik({
+    initialValues: initialValues,
+    validationSchema : contactForm,
+    onSubmit: (e)=>{
     // Your EmailJS service ID, template ID, and Public Key
     const serviceId = 'service_zd3deex';
     const templateId = 'template_qe7uxrq';
@@ -36,71 +29,91 @@ const ContactForm = () => {
 
     // Create a new object that contains dynamic template params
     const templateParams = {
-      from_name: name,
-      from_mobile: mobile,
-      from_email: email,
+      from_name: values.name,
+      from_mobile: values.mobile,
+      from_email: values.email,
       to_name: 'Pradosh',
-      message: message,
+      message: values.message,
     };
 
     // Send the email using EmailJS
     emailjs.send(serviceId, templateId, templateParams, publicKey)
       .then((response) => {
         setShowSuccess(true)
-        // console.log('Email sent successfully!', response);
-        setName('');
-        setMobile('');
-        setEmail('');
-        setMessage('');
+        
+        console.log(response?.status == 200);
+
+        if(response?.status == 200){
+
+           setValues({
+            name: "",
+            mobile: "",
+            email: "",
+            service: "",
+            message: "",
+          })
+       
+        } 
       })
-      .catch((error) => {
-        setShowError(true);
-        // console.error('Error sending email:', error);
-      });
-  }
+    }
+  })
+
+  useEffect(() => {
+    setTimeout(()=>{
+      setShowSuccess(false)
+    }, 1000)
+
+  },[showSuccess])
 
   return (
     <form onSubmit={handleSubmit} className='emailForm flex flex-col gap-8'>
-      <div className='w-full flex flex-col md:flex-row justify-between items-center gap-8 md:gap-4'>
+      <div className='w-full flex flex-col md:flex-row justify-between items-start  gap-8 md:gap-4'>
         <div className='w-full md:w-[50%]'>
           <input
           type="text"
           placeholder="Your Name"
-          value={name}
-          required={true}
-          onChange={(e) => setName(e.target.value)}
+          name='name'
+          value={values.name}
+          autoComplete='off'
+          onChange={handleChange}
           />
+          {errors.name && touched.name && <p className='text-[red] mt-1'>{errors.name}</p>}
         </div>
+        
 
         <div className='w-full md:w-[50%]'>
           <input 
           type="tel"
           placeholder='Mobile Number'
-          value={mobile}
+          value={values.mobile}
+          name='mobile'
           minLength={10}
           maxLength={10}
-          required={true}
-          onChange={(e) => setMobile(e.target.value)} 
+          autoComplete='off'
+          onChange={handleChange} 
           />
+          {errors.mobile && touched.mobile && <p className='text-[red] mt-1'>{errors.mobile}</p>}
         </div>
       </div>
       
-      <div className='w-full flex flex-col md:flex-row justify-between items-center gap-8 md:gap-4'>
+      <div className='w-full flex flex-col md:flex-row justify-between items-start gap-8 md:gap-4'>
         <div className='w-full md:w-[50%]'>
           <input  
           type="email"
           placeholder="Your Email"
-          value={email}
-          required={true}
-          onChange={(e) => setEmail(e.target.value)}
+          name='email'
+          value={values.email}
+          autoComplete='off'
+          onChange={handleChange}
           />
+          {errors.email && touched.email && <p className='text-[red] mt-1'>{errors.email}</p>}
         </div>
 
         <div className='w-full md:w-[50%]'>
-          <select>
+          <select name='service'>
             <option value="" defaultValue disabled hidden>Select Services</option>
-            <option value="photography">Weeding Photography</option>
-            <option value="prewedding">Pre-Weeding Photography</option>
+            <option value="photography">Wedding Photography</option>
+            <option value="prewedding">Pre-Wedding Photography</option>
             <option value="engagement">Engagement Photography</option>
             <option value="birthday">Birthday Photography</option>
             <option value="maternity">Maternity Photography</option>
@@ -113,6 +126,7 @@ const ContactForm = () => {
             <option value="naimgceremony">Naming ceremony</option>
             <option value="others">Othres</option>
           </select>
+          {errors.service && touched.service && <p className='text-[red] mt-1'>{errors.service}</p>}
         </div>
       </div>
       
@@ -122,9 +136,10 @@ const ContactForm = () => {
         cols="50"
         rows="4"
         placeholder="Message"
-        value={message}
+        name='message'
+        value={values.message}
         className='h-[80px] md:h-[100px]'
-        onChange={(e) => setMessage(e.target.value)}
+        onChange={handleChange}
       >
       </textarea>
 
@@ -136,7 +151,7 @@ const ContactForm = () => {
         <span className="relative z-10">Send Email</span>     
       </button>
 
-    {showSuccess && <p className='mt-2'>The Email has been sent successfully.</p>}
+      {showSuccess && <p className='mt-2 text-white'>The Email has been sent successfully.</p>}
     </form>
   )
 }

@@ -13,10 +13,10 @@
     "@next/font": "^14.2.5",
     "aos": "^2.3.4",
     "autoprefixer": "10.4.14",
-    "axios": "^1.6.2",
     "cloudinary": "^2.0.0",
     "eslint": "8.46.0",
     "eslint-config-next": "13.4.12",
+    "formik": "^2.4.6",
     "next": "^13.5.4",
     "postcss": "8.4.27",
     "react": "18.2.0",
@@ -29,7 +29,8 @@
     "react-router-dom": "^6.14.2",
     "sass": "^1.69.3",
     "sharp": "^0.33.3",
-    "swiper": "^10.3.1"
+    "swiper": "^10.3.1",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "tailwindcss": "^3.3.3"

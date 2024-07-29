@@ -11,16 +11,15 @@ const AllPageBanner = ({title, button, bgImage, mobBgImage}) => {
             <div className='relative w-[100%]'>
                 <Image src={bgImage}
                 alt='Service Banner'
-                width={100}
-                height={100}
-                priority={true}
-                className='w-[100%] h-[550px] object-cover hidden md:flex'
+                width={1920}
+                height={550}
+                className='w-auto h-auto object-cover hidden md:flex'
                 />
                 <Image src={mobBgImage}
                 alt='Service Banner'
-                width={100}
-                height={100}
-                priority={true}
+                width={360}
+                height={650}
+                loading="lazy"
                 className='w-[100%] object-cover h-[650px] flex md:hidden'
                 />
 

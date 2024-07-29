@@ -38,7 +38,7 @@ const GalleryFilter = () => {
       return (
         <>
         <div id="gallery">
-        <h2 className='font-coromont text-[28px] md:text-[32px] lg:text-[38px] pb-[18px] md:py-[5px] xl:text-[50px] leading-[1.3em] md:leading-[1.6em] text-center'>Our Gallery</h2>
+        <h2 className='font-coromont text-[32px] md:text-[32px] lg:text-[38px] pb-[18px] md:py-[5px] xl:text-[50px] leading-[1.3em] md:leading-[1.6em] text-center'>Our Gallery</h2>
         </div>
         {/* Mobile Title Slider */}
 

@@ -10,7 +10,7 @@ const GetInTouch = () => {
     <>
       <div className='w-full px-[24px] xl:px-20 pt-[10px] xl:pt-[60px] pb-[70px] md:flex gap-[60px]'>
         <div className='w-[100%] md:w-[50%] items-center'>
-          <h2 className='font-coromont text-[28px] md:text-[32px] lg:text-[35px] xl:text-[45px] text-center md:text-left'>Get In Touch</h2>
+          <h2 className='font-coromont text-[32px] md:text-[32px] lg:text-[35px] xl:text-[50px] text-center md:text-left'>Get In Touch</h2>
           <p className='text-[15px] lg:text-[17px] xl:text-[18px] font-josefin mb-[15px] md:mb-[30px] xl:mb-[50px] w-[100%] md:w-[90%] text-center md:text-left px-[15px] md:px-[0px]'>
           Let’s embark on a creative journey together, turning your moments into cherished memories that will last a lifetime.
           </p>

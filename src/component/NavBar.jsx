@@ -58,7 +58,7 @@ const NavBar = () => {
     <>
       <div className={`w-full flex px-[24px] xl:px-20 py-4 justify-between items-center absolute top-0 left-0 z-10`}>
         <div className='flex' data-aos ='fade' data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="200" data-aos-once="true">
-          <Link href="/"><Image src={logo} alt='Logo;' className='w-[110px] md:w-[90px] lg:w-[120px]'/></Link>
+          <Link href="/"><Image src={logo} alt='Pradosh Photography;' className='w-[110px] md:w-[90px] lg:w-[120px]'/></Link>
         </div>
         <span 
           onClick={handleNavToggle} 
